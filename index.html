@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washington Wizards Stadium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank you for filling out this information! The data collected will help determine if the Washington Wizards move to Virginia</p>
+
+<form id="survey-form">
+<fieldset>
+  <label for="name-label" id="name-label">Name<input id="name" type="text" placeholder="John Smith" required /></label>
+  <label for="state-label" id="state-label">State<input id="state" type="text" placeholder="New York" required /></label>
+  <label for="email-label" id="email-label">Email<input id="email" type="email" placeholder="johnsmith@yahoo.com" required /></label>
+  <label for="number-label" id="number-label">Age <input id="number" type="number" placeholder="26" min="13" max="100" /></label>
+  </fieldset>
+
+  <fieldset>
+  <legend>Do you buy tickets to basketball games?</legend>
+  <label for="yes"><input class="inline" id="yes" type="radio" name="yes-tickets" value="1" checked /> Yes</label>
+  <label for="no"><input class="inline" id="no" type="radio" name="no-tickets" value="2" /> No</label> 
+  <legend>Do you believe the Wizards should move to Virginia?</legend>
+  <select name="move" id="dropdown">
+    <option value="">(select one)</option>
+    <option value="3">Yes</option>
+    <option value="4">No</option>
+  </select>
+  <legend>Do you live in Washington D.C, Maryland, or Virginia?</legend>
+  <select name="local" id="local">
+    <option value="">(select one)</option>
+    <option value="5">Yes - Washington D.C</option>
+    <option value="6">Yes - Maryland</option>
+    <option value="7">Yes - Virginia</option>
+    <option value="8">No - Other</option>
+  </select>
+  <legend>Would you buy tickets to the games if the Wizards stadium was moved to Virgina?</legend>
+  <label for="yes-ticket"><input class="inline" id="yes-ticket" type="checkbox" name="yes-tickets" value="9" checked /> Yes</label>
+  <label for="no-ticket"><input class="inline" id="no-ticket" type="checkbox" name="no-tickets" value="10"  /> No</label>
+  <label for="maybe-ticket"><input class="inline" id="maybe-ticket" type="checkbox" name="maybe-tickets" value="11"  /> Maybe</label>
+</fieldset>
+  
+  <fieldset>
+<label for="addional-comments" name="additional-comments">Provide any additional comments (optinal):
+  <textarea name="additional-comments" id ="additional-comments"></textarea>
+</label>
+<input id="submit" type="submit" value="Submit" />
+</fieldset>
+
+<footer id="footer">Created by Romel Melendez</footer>
+</form>    
+</body>
+</html>
